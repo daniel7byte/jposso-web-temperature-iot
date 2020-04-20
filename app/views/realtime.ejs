@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Realtime</title>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="bg-gray-100">
   <div class="container mx-auto pt-5">
     <div class="flex flex-wrap mb-4">
       <div class="flex-1 h-12">
@@ -21,8 +21,8 @@
           alt="ChitChat Logo" />
       </div>
       <div class="ml-6 pt-1">
-        <h4 class="text-xl text-gray-900 leading-tight">ds18b20-1</h4>
-        <p class="text-base text-gray-600 leading-normal" id="data">
+        <h4 class="text-2xl text-gray-900 leading-tight">Sensor: <span class="uppercase"><%= sensor%></span></h4>
+        <p class="text-xl text-gray-600 leading-normal" id="data">
           # °C
         </p>
       </div>
@@ -50,7 +50,7 @@
 
     var db = firebase.database();
 
-    var ref = db.ref("<%= device %>");
+    var ref = db.ref("<%= device %>/<%= sensor%>");
     ref.on("value", function (snapshot) {
       var elem = document.getElementById("data");
       console.log(snapshot.val());

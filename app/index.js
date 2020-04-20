@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 
 // Routes
 app.use("/", express.static(__dirname + "/public"));
-app.use("/", require("./routes/index"));
+app.use("/web", require("./routes/index"));
 app.use("/api", require("./routes/api"));
 app.use("/api/iot", require("./routes/iot"));
 

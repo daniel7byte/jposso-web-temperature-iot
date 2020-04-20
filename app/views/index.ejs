@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tailwind Starter Template - Day Admin Template: Tailwind Toolbox</title>
+    <title>JPosso - IoT Dashboard</title>
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
 
@@ -27,7 +27,7 @@
 
             <div class="w-1/2 pl-2 md:pl-0">
                 <a class="text-gray-900 text-base xl:text-xl no-underline hover:no-underline font-bold" href="#">
-                    <i class="fas fa-sun text-orange-600 pr-3"></i> Admin Day Mode
+                    <i class="fas fa-sun text-orange-600 pr-3"></i> JPosso - IoT Dashboard
                 </a>
             </div>
             <div class="w-1/2 pr-0">
@@ -141,102 +141,23 @@
 
             <!--Console Content-->
 
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap" id="records">
                 <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                     <!--Metric Card-->
                     <div class="bg-white border rounded shadow p-2">
                         <div class="flex flex-row items-center">
                             <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-green-600"><i
-                                        class="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div>
+                                <div class="rounded p-3 bg-red-600"><i
+                                        class="fa fa-thermometer-empty fa-2x fa-fw fa-inverse"></i></div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-500">Total Revenue</h5>
-                                <h3 class="font-bold text-3xl">$3249 <span class="text-green-500"><i
-                                            class="fas fa-caret-up"></i></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-white border rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-orange-600"><i
-                                        class="fas fa-users fa-2x fa-fw fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-500">Total Users</h5>
-                                <h3 class="font-bold text-3xl">249 <span class="text-orange-500"><i
-                                            class="fas fa-exchange-alt"></i></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-white border rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-yellow-600"><i
-                                        class="fas fa-user-plus fa-2x fa-fw fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-500">New Users</h5>
-                                <h3 class="font-bold text-3xl">2 <span class="text-yellow-600"><i
-                                            class="fas fa-caret-up"></i></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-white border rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-blue-600"><i
-                                        class="fas fa-server fa-2x fa-fw fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-500">Server Uptime</h5>
-                                <h3 class="font-bold text-3xl" id="data">152 days</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-white border rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-indigo-600"><i
-                                        class="fas fa-tasks fa-2x fa-fw fa-inverse"></i></div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-500">To Do List</h5>
-                                <h3 class="font-bold text-3xl">7 tasks</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-white border rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-red-600"><i class="fas fa-inbox fa-2x fa-fw fa-inverse"></i>
-                                </div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-500">Issues</h5>
-                                <h3 class="font-bold text-3xl">3 <span class="text-red-500"><i
-                                            class="fas fa-caret-up"></i></span></h3>
+                                <h5 class="font-bold uppercase text-gray-500">Sensor #1</h5>
+                                <h3 class="font-bold text-3xl" id="data">
+                                    0 °C
+                                    <span class="text-red-500">
+                                        <i class="fas fa-caret-up"></i>
+                                    </span>
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -249,62 +170,6 @@
 
             <div class="flex flex-row flex-wrap flex-grow mt-2">
 
-                <div class="w-full md:w-1/2 p-3">
-                    <!--Graph Card-->
-                    <div class="bg-white border rounded shadow">
-                        <div class="border-b p-3">
-                            <h5 class="font-bold uppercase text-gray-600">Graph</h5>
-                        </div>
-                        <div class="p-5">
-                            <canvas id="chartjs-7" class="chartjs" width="undefined" height="undefined"></canvas>
-                            <script>
-                                new Chart(document.getElementById("chartjs-7"), {
-                                    "type": "bar",
-                                    "data": {
-                                        "labels": ["January", "February", "March", "April"],
-                                        "datasets": [{
-                                            "label": "Page Impressions",
-                                            "data": [10, 20, 30, 40],
-                                            "borderColor": "rgb(255, 99, 132)",
-                                            "backgroundColor": "rgba(255, 99, 132, 0.2)"
-                                        }, {
-                                            "label": "Adsense Clicks",
-                                            "data": [5, 15, 10, 30],
-                                            "type": "line",
-                                            "fill": false,
-                                            "borderColor": "rgb(54, 162, 235)"
-                                        }]
-                                    },
-                                    "options": {
-                                        "scales": {
-                                            "yAxes": [{
-                                                "ticks": {
-                                                    "beginAtZero": true
-                                                }
-                                            }]
-                                        }
-                                    }
-                                });
-                            </script>
-                        </div>
-                    </div>
-                    <!--/Graph Card-->
-                </div>
-
-                <div class="w-full md:w-1/2 p-3">
-                    <!--Graph Card-->
-                    <div class="bg-white border rounded shadow">
-                        <div class="border-b p-3">
-                            <h5 class="font-bold uppercase text-gray-600">Graph</h5>
-                        </div>
-                        <div class="p-5">
-                            <canvas id="chartjs-0" class="chartjs" width="undefined" height="undefined"></canvas>
-                            <!-- script -->
-                        </div>
-                    </div>
-                    <!--/Graph Card-->
-                </div>
-
                 <div class="w-full md:w-1/2 xl:w-1/3 p-3">
                     <!--Graph Card-->
                     <div class="bg-white border rounded shadow">
@@ -313,31 +178,6 @@
                         </div>
                         <div class="p-5">
                             <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
-                            <script>
-                                new Chart(document.getElementById("chartjs-1"), {
-                                    "type": "bar",
-                                    "data": {
-                                        "labels": ["January", "February", "March", "April", "May", "June", "July"],
-                                        "datasets": [{
-                                            "label": "Likes",
-                                            "data": [65, 59, 80, 81, 56, 55, 40],
-                                            "fill": false,
-                                            "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
-                                            "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
-                                            "borderWidth": 1
-                                        }]
-                                    },
-                                    "options": {
-                                        "scales": {
-                                            "yAxes": [{
-                                                "ticks": {
-                                                    "beginAtZero": true
-                                                }
-                                            }]
-                                        }
-                                    }
-                                });
-                            </script>
                         </div>
                     </div>
                     <!--/Graph Card-->
@@ -349,37 +189,11 @@
                         <div class="border-b p-3">
                             <h5 class="font-bold uppercase text-gray-600">Graph</h5>
                         </div>
-                        <div class="p-5"><canvas id="chartjs-4" class="chartjs" width="undefined"
-                                height="undefined"></canvas>
-                            <script>
-                                new Chart(document.getElementById("chartjs-4"), {
-                                    "type": "doughnut",
-                                    "data": {
-                                        "labels": ["P1", "P2", "P3"],
-                                        "datasets": [{
-                                            "label": "Issues",
-                                            "data": [300, 50, 100],
-                                            "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
-                                        }]
-                                    }
-                                });
-                            </script>
+                        <div class="p-5">
+                            <canvas id="chartjs-2" class="chartjs" width="undefined" height="undefined"></canvas>
                         </div>
                     </div>
                     <!--/Graph Card-->
-                </div>
-
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Template Card-->
-                    <div class="bg-white border rounded shadow">
-                        <div class="border-b p-3">
-                            <h5 class="font-bold uppercase text-gray-600">Template</h5>
-                        </div>
-                        <div class="p-5">
-
-                        </div>
-                    </div>
-                    <!--/Template Card-->
                 </div>
 
                 <div class="w-full p-3">
@@ -550,27 +364,88 @@
 
         var db = firebase.database();
 
-        var ref = db.ref("<%= device %>");
-        ref.on("value", function (snapshot) {
-            var elem = document.getElementById("data");
-            console.log(snapshot.val());
-            elem.innerHTML = snapshot.val().value + " °C";
-        });
+        let datasets = [
+        {
+            "label": "DS18B20-1",
+            "data": [
+                33,
+                32,
+                55
+            ],
+            "borderColor": "rgb(255, 99, 132)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+        }];
 
-        new Chart(document.getElementById("chartjs-0"), {
+        let chartConfig = {
             "type": "line",
             "data": {
-                "labels": ["January", "February", "March", "April", "May", "June", "July"],
-                "datasets": [{
-                    "label": "Views",
-                    "data": [65, 59, 80, 81, 56, 55, 40],
-                    "fill": false,
-                    "borderColor": "rgb(75, 192, 192)",
-                    "lineTension": 0.1
-                }]
-            },
-            "options": {}
+                "labels": [
+                    1587408941542,
+                    1587408956465,
+                    1587410501470
+                ],
+                "datasets": datasets
+            }
+        };
+
+        let chart = new Chart(document.getElementById("chartjs-1"), chartConfig);
+        /* temp */ new Chart(document.getElementById("chartjs-2"), chartConfig);
+
+        var data, sensores;
+
+        var ref = db.ref("<%= device %>");
+        ref.on("value", function (snapshot) {
+            
+            data = snapshot.val();
+
+            sensores = Object.keys(data);
+
+            let html = '';
+
+            for (let i in sensores) {
+                // console.log(sensores[i]);
+                // console.log(data[sensores[i]]);
+                // console.log(data[sensores[i]].value);
+
+                let record = {
+                    sensor: sensores[i],
+                    value: data[sensores[i]].value
+                };
+
+                record.color = (record.value > 0 ? 'red' : 'blue');
+    
+                const htmlRecord = `
+                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
+                    <!--Metric Card-->
+                    <div class="bg-white border rounded shadow p-2">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded p-3 bg-${record.color}-600"><i
+                                        class="fa fa-thermometer-empty fa-2x fa-fw fa-inverse"></i></div>
+                            </div>
+                            <div class="flex-1 text-right md:text-center">
+                                <h5 class="font-bold uppercase text-gray-500">${record.sensor}</h5>
+                                <h3 class="font-bold text-3xl" id="data">
+                                    ${record.value} °C
+                                    <span class="text-${record.color}-500">
+                                        <i class="fas fa-caret-up"></i>
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Metric Card-->
+                </div>
+                `;
+
+                html += htmlRecord;
+            }
+
+            var elem = document.getElementById("records");
+                elem.innerHTML = html;
+
         });
+        
     </script>
 </body>
 
