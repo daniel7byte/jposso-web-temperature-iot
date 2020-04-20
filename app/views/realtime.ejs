@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Realtime</title>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 </head>
 
 <body class="bg-gray-100">
@@ -15,7 +16,7 @@
         <h1 class="text-2xl text-center">Dispositivo: <a href="../<%=device%>"><%=device%></a></h1>
       </div>
     </div>
-    <div class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+    <div class="max-w-3xl mx-auto flex p-6 bg-white rounded-lg shadow-xl">
       <div class="flex-shrink-0">
         <img class="h-12 w-12" src="https://www.uscloud.com/wp-content/uploads/2018/03/IoT-device-200x212.png"
           alt="ChitChat Logo" />
@@ -27,12 +28,17 @@
         </p>
       </div>
     </div>
+
+    <div class="max-w-3xl mx-auto flex p-2 bg-white rounded-lg shadow-xl mt-5">
+      <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
+    </div>
   </div>
 
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
   <script>
+
     // Your web app's Firebase configuration
     var firebaseConfig = {
       apiKey: "AIzaSyCFqiaX5ifSAW0J-919AhjLlARIj3mPVVw",
@@ -49,12 +55,46 @@
     firebase.analytics();
 
     var db = firebase.database();
+    var data, sensores, temp;
 
     var ref = db.ref("<%= device %>/<%= sensor%>");
     ref.on("value", function (snapshot) {
       var elem = document.getElementById("data");
-      console.log(snapshot.val());
+      // console.log(snapshot.val());
       elem.innerHTML = snapshot.val().value + " °C";
+
+      data = snapshot.val();
+
+      sensores = Object.keys(data);
+
+      let labels = [];
+      let dataChart = [];
+
+      for (let i in sensores) {
+        if(sensores[i] != "value"){
+          console.log(data[sensores[i]]);
+          labels.push(data[sensores[i]].timestamp);
+          dataChart.push(data[sensores[i]].value);  
+        }
+      }
+
+      let datasets = [{
+        label: "<%=sensor%>",
+        data: dataChart,
+        borderColor: "rgb(255, 99, 132)",
+        backgroundColor: "rgba(0, 0, 0, 0)"
+      }];
+
+      let chartConfig = {
+        type: "line",
+        data: {
+          labels: labels,
+          datasets: datasets
+        }
+      };
+
+      let chart = new Chart(document.getElementById("chartjs-1"), chartConfig);
+
     });
   </script>
 </body>
