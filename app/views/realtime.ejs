@@ -37,6 +37,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
   <script>
 
     // Your web app's Firebase configuration
@@ -72,8 +73,9 @@
 
       for (let i in sensores) {
         if(sensores[i] != "value"){
-          console.log(data[sensores[i]]);
-          labels.push(data[sensores[i]].timestamp);
+          //console.log(data[sensores[i]]);
+          var day = moment(data[sensores[i]].timestamp);
+          labels.push(day.format('LLLL'));
           dataChart.push(data[sensores[i]].value);  
         }
       }
