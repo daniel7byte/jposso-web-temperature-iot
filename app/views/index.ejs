@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JPosso - IoT Dashboard</title>
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <meta name="description" content="Panel de control de sistemas IoT desarrollado por José Daniel Posso García">
+    <meta name="keywords" content="IoT, Arduino, ESP, NodeJS, ChartJS, daniel7byte, JPosso, Firebase">
+    <meta name="author" content="Jose Daniel Posso Garcia (@daniel7byte)">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -393,7 +394,7 @@
 
         var data, sensores;
 
-        var ref = db.ref("<%= device %>");
+        var ref = db.ref("<%=device%>");
         ref.on("value", function (snapshot) {
             
             data = snapshot.val();
@@ -420,15 +421,16 @@
                     <div class="bg-white border rounded shadow p-2">
                         <div class="flex flex-row items-center">
                             <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-${record.color}-600"><i
-                                        class="fa fa-thermometer-empty fa-2x fa-fw fa-inverse"></i></div>
+                                <div class="rounded p-3 bg-${record.color}-600">
+                                    <i class="fa fa-thermometer-empty fa-2x fa-fw fa-inverse"></i>
+                                </div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-500">${record.sensor}</h5>
+                                <h5 class="font-bold uppercase text-gray-500"><a href="./<%=device%>/${record.sensor}">${record.sensor}</a></h5>
                                 <h3 class="font-bold text-3xl" id="data">
                                     ${record.value} °C
                                     <span class="text-${record.color}-500">
-                                        <i class="fas fa-caret-up"></i>
+                                        <i class="fas fa-caret-${record.value > 0 ? 'up' : 'down'}"></i>
                                     </span>
                                 </h3>
                             </div>
