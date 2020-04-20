@@ -24,15 +24,14 @@ router.get("/device/:device", (req, res) => {
 });
 
 router.post("/device/:device", (req, res) => {
-  var ref = db.ref(req.params.device);
+  var ref = db.ref(req.params.device + '/' + req.body.sensor);
 
   var newRecordRef = ref.push({
-    sensor: req.body.sensor,
     value: req.body.value,
     timestamp: admin.database.ServerValue.TIMESTAMP,
   });
 
-  db.ref(req.params.device).update({
+  db.ref(req.params.device + '/' + req.body.sensor).update({
     value: req.body.value,
   });
 
