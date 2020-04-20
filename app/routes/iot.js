@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const router = Router();
 
-// Firebase
+// Firebase Connection
 const admin = require("firebase-admin");
 const serviceAccount = require("../../jposso-iot-dashboard-firebase-adminsdk-3mgxn-d1e6f0884f.json");
 admin.initializeApp({
