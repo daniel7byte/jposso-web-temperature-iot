@@ -10,6 +10,7 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// Templates
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
