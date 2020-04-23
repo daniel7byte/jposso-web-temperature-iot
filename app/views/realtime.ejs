@@ -13,13 +13,12 @@
   <div class="container mx-auto pt-5">
     <div class="flex flex-wrap mb-4">
       <div class="flex-1 h-12">
-        <h1 class="text-2xl text-center">Dispositivo: <a href="../<%=device%>"><%=device%></a></h1>
+        <h1 class="text-3xl text-center">Dispositivo: <a href="../<%=device%>"><%=device%></a></h1>
       </div>
     </div>
-    <div class="max-w-3xl mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+    <div class="max-w-4xl mx-auto flex p-6 bg-white rounded-lg shadow-xl">
       <div class="flex-shrink-0">
-        <img class="h-12 w-12" src="https://www.uscloud.com/wp-content/uploads/2018/03/IoT-device-200x212.png"
-          alt="ChitChat Logo" />
+        <img class="h-12 w-12" src="https://www.uscloud.com/wp-content/uploads/2018/03/IoT-device-200x212.png" alt="ChitChat Logo" />
       </div>
       <div class="ml-6 pt-1">
         <h4 class="text-2xl text-gray-900 leading-tight">Sensor: <span class="uppercase"><%= sensor%></span></h4>
@@ -29,15 +28,17 @@
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto flex p-2 bg-white rounded-lg shadow-xl mt-5">
-      <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
+    <div class="max-w-4xl mx-auto flex p-2 bg-white rounded-lg shadow-xl mt-5">
+      <div class="w-full" id="chartjs-1-container">
+        <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
+      </div>
     </div>
   </div>
 
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
-  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
   <script>
 
     // Your web app's Firebase configuration
@@ -56,10 +57,13 @@
     firebase.analytics();
 
     var db = firebase.database();
-    var data, sensores, temp;
+    var data, sensores, temp, chart;
 
     var ref = db.ref("<%= device %>/<%= sensor%>");
     ref.on("value", function (snapshot) {
+
+      resetCanvas();
+
       var elem = document.getElementById("data");
       // console.log(snapshot.val());
       elem.innerHTML = snapshot.val().value + " °C";
@@ -75,7 +79,7 @@
         if(sensores[i] != "value"){
           //console.log(data[sensores[i]]);
           var day = moment(data[sensores[i]].timestamp);
-          labels.push(day.format('LLLL'));
+          labels.push(day.locale("es").calendar());
           dataChart.push(data[sensores[i]].value);  
         }
       }
@@ -92,12 +96,26 @@
         data: {
           labels: labels,
           datasets: datasets
+        },
+        options: {
+          scales: {
+            xAxes: [{
+              ticks: {
+                autoSkip: true
+              }
+            }]
+          }
         }
       };
 
-      let chart = new Chart(document.getElementById("chartjs-1"), chartConfig);
+      chart = new Chart(document.getElementById("chartjs-1"), chartConfig);
 
     });
+
+    var resetCanvas = function(){
+      document.getElementById("chartjs-1").remove(); // this is my <canvas> element
+      document.getElementById("chartjs-1-container").innerHTML = '<canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>';
+    };
   </script>
 </body>
 
