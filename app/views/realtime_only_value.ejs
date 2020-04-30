@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realtime Only Value</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100">
+  <div class="container mx-auto pt-5">
+    <div class="flex flex-wrap mb-4">
+      <div class="flex-1 h-12">
+        <h1 class="text-3xl text-center">Dispositivo: <a href="../<%=device%>"><%=device%></a></h1>
+      </div>
+    </div>
+    <div class="max-w-4xl mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+      <div class="flex-shrink-0">
+        <img class="h-12 w-12" src="https://www.uscloud.com/wp-content/uploads/2018/03/IoT-device-200x212.png" alt="ChitChat Logo" />
+      </div>
+      <div class="ml-6 pt-1">
+        <h4 class="text-2xl text-gray-900 leading-tight">Sensor: <span class="uppercase"><%= sensor%></span></h4>
+        <p class="text-xl text-gray-600 leading-normal" id="data">
+          # °C
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+  <script>
+
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCFqiaX5ifSAW0J-919AhjLlARIj3mPVVw",
+      authDomain: "jposso-iot-dashboard.firebaseapp.com",
+      databaseURL: "https://jposso-iot-dashboard.firebaseio.com",
+      projectId: "jposso-iot-dashboard",
+      storageBucket: "jposso-iot-dashboard.appspot.com",
+      messagingSenderId: "547594543223",
+      appId: "1:547594543223:web:3c252a0f7002eda2e4e672",
+      measurementId: "G-SM3LNG7WQY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    var db = firebase.database();
+
+    var elem = document.getElementById("data");
+
+    var ref = db.ref("<%= device %>/<%= sensor%>");
+    ref.on("value", function (snapshot) {
+      // console.log(snapshot.val());
+      elem.innerHTML = snapshot.val().value + " °C";
+    });
+  </script>
+</body>
+
+</html>

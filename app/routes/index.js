@@ -7,7 +7,17 @@ router.get("/device/:device", (req, res) => {
 });
 
 router.get("/device/:device/:sensor", (req, res) => {
-  res.render("realtime", { device: req.params.device, sensor: req.params.sensor });
+  res.render("realtime", {
+    device: req.params.device,
+    sensor: req.params.sensor,
+  });
+});
+
+router.get("/device/:device/:sensor/value", (req, res) => {
+  res.render("realtime_only_value", {
+    device: req.params.device,
+    sensor: req.params.sensor,
+  });
 });
 
 router.get("/test", (req, res) => {
