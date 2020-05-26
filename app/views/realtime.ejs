@@ -66,7 +66,8 @@
 
       var elem = document.getElementById("data");
       // console.log(snapshot.val());
-      elem.innerHTML = snapshot.val().value + " °C";
+      var ultimoRegistro = snapshot.val().value;
+      elem.innerHTML = ultimoRegistro.toFixed(2) + " °C";
 
       data = snapshot.val();
 
