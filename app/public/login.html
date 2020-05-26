@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>José Daniel Posso García</title>
+    <meta name="description" content="La pagina web de un chico, estudiante de ingeniería mecatronica y amante de la programación."/>
+    <meta name="keywords" content="Jose Daniel Posso Garcia, daniel7byte, mecatronica, iot, programacion" />
+    <meta name="author" content="Jose Daniel Posso Garcia (@daniel7byte)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <input type="email" id="email">
+    <input type="password" id="password">
+    <button onclick="registrar();">Enviar</button>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script>
+
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCFqiaX5ifSAW0J-919AhjLlARIj3mPVVw",
+        authDomain: "jposso-iot-dashboard.firebaseapp.com",
+        databaseURL: "https://jposso-iot-dashboard.firebaseio.com",
+        projectId: "jposso-iot-dashboard",
+        storageBucket: "jposso-iot-dashboard.appspot.com",
+        messagingSenderId: "547594543223",
+        appId: "1:547594543223:web:3c252a0f7002eda2e4e672",
+        measurementId: "G-SM3LNG7WQY"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+
+      function registrar() {
+
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+
+        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // ...
+        });
+      }
+
+    </script>
+  </body>
+</html>

@@ -394,6 +394,8 @@
 
         var data, sensores;
 
+        // TARJETAS
+
         var ref = db.ref("<%=device%>");
         ref.on("value", function (snapshot) {
             
@@ -443,8 +445,7 @@
                 html += htmlRecord;
             }
 
-            var elem = document.getElementById("records");
-                elem.innerHTML = html;
+            document.getElementById("records").innerHTML = html;
 
         });
         
