@@ -1,0 +1,803 @@
+{
+  "nodemcu-1" : {
+    "ds18b20-1" : {
+      "-M5NwY55-yavV3ba0G7z" : {
+        "timestamp" : 1587408941542,
+        "value" : "33"
+      },
+      "-M5NwajGTg5xdpcqDF6s" : {
+        "timestamp" : 1587408956465,
+        "value" : "32"
+      },
+      "-M5O1UvuEzjit4efwLZR" : {
+        "timestamp" : 1587410501470,
+        "value" : "55"
+      },
+      "-M5OrYyPjpUFFOhT_Ndt" : {
+        "timestamp" : 1587424411584,
+        "value" : "88"
+      },
+      "-M5OreQ1WwpdQ5NeU8N-" : {
+        "timestamp" : 1587424438880,
+        "value" : "0"
+      },
+      "-M5OrfttVrDyZZpHz-kg" : {
+        "timestamp" : 1587424444060,
+        "value" : "10"
+      },
+      "-M5OrgTo0qRxJeDa_KIT" : {
+        "timestamp" : 1587424446423,
+        "value" : "11"
+      },
+      "-M5OrhCVwa_O7-AlgDBH" : {
+        "timestamp" : 1587424449411,
+        "value" : "55"
+      },
+      "value" : "55"
+    },
+    "ds18b20-2" : {
+      "-M5O-7kj2pGM4RURRXoJ" : {
+        "timestamp" : 1587409882258,
+        "value" : "22"
+      },
+      "-M5O-7tnWaYtxbVEvGgZ" : {
+        "timestamp" : 1587409882838,
+        "value" : "22"
+      },
+      "-M5O1QWx2PmplPD_GLAT" : {
+        "timestamp" : 1587410483425,
+        "value" : "22"
+      },
+      "-M5O1RedkG9JPWss1_mt" : {
+        "timestamp" : 1587410488076,
+        "value" : "25"
+      },
+      "-M5PbADv_8TpwVwm9Y1t" : {
+        "timestamp" : 1587436893153,
+        "value" : "28"
+      },
+      "value" : "28"
+    },
+    "ds18b20-3" : {
+      "-M5O1Vu795Z9uzVBJhPx" : {
+        "timestamp" : 1587410505452,
+        "value" : "55"
+      },
+      "-M5O1X-9eCUId0SJzBFW" : {
+        "timestamp" : 1587410509934,
+        "value" : "77"
+      },
+      "-M5O5h8KhQe7LgzbrVF1" : {
+        "timestamp" : 1587411604154,
+        "value" : "-14"
+      },
+      "-M5O5jNbPGgn11ALp3zC" : {
+        "timestamp" : 1587411613326,
+        "value" : "0"
+      },
+      "-M5O5kYJDfSRSOIwyhSH" : {
+        "timestamp" : 1587411619074,
+        "value" : "0.1"
+      },
+      "-M5O5m8Ubq4YwUCc9FZr" : {
+        "timestamp" : 1587411624645,
+        "value" : "0.11111112"
+      },
+      "-M5O5n8hqHhtwaOMTVg_" : {
+        "timestamp" : 1587411629166,
+        "value" : "0.11111111111111111"
+      },
+      "-M5O5oksaQw5v7bmfidb" : {
+        "timestamp" : 1587411635358,
+        "value" : "0.5"
+      },
+      "-M5O5q7b-uNWlbZ9Z30r" : {
+        "timestamp" : 1587411640973,
+        "value" : "0.0000000000000000000000000000000000000000000001"
+      },
+      "-M5O5sPkmmO9-25rxAkZ" : {
+        "timestamp" : 1587411650326,
+        "value" : "0.0"
+      },
+      "-M5O5u0VVndXI8DmlQ7k" : {
+        "timestamp" : 1587411656904,
+        "value" : "-9"
+      },
+      "-M5OyzfZjvm2FU5fsYho" : {
+        "timestamp" : 1587426360071,
+        "value" : "55"
+      },
+      "-M5Oz-EGTqLt95ps1oi0" : {
+        "timestamp" : 1587426362357,
+        "value" : "55"
+      },
+      "-M5Oz-_qOG6vSJEwrOiN" : {
+        "timestamp" : 1587426363801,
+        "value" : "55"
+      },
+      "-M5Oz-sIV-KT2fnzTTFY" : {
+        "timestamp" : 1587426364983,
+        "value" : "55"
+      },
+      "-M5Oz05TLmXQjQqmH3pF" : {
+        "timestamp" : 1587426365890,
+        "value" : "55"
+      },
+      "-M5Oz0vHZYoMR2MPMzFS" : {
+        "timestamp" : 1587426369270,
+        "value" : "44"
+      },
+      "-M5Oz19tG7F59npC-_bA" : {
+        "timestamp" : 1587426370268,
+        "value" : "44"
+      },
+      "-M5Oz2-u_jbroU8sjcx6" : {
+        "timestamp" : 1587426373726,
+        "value" : "30"
+      },
+      "-M5Oz310UDvmEb8BsBGA" : {
+        "timestamp" : 1587426377892,
+        "value" : "-30"
+      },
+      "-M5Oz46HdCH5xwupV_s6" : {
+        "timestamp" : 1587426382326,
+        "value" : "-10"
+      },
+      "-M5Oz4vmsCNwZpWxVJIP" : {
+        "timestamp" : 1587426385687,
+        "value" : "0"
+      },
+      "-M5Oz5oTnxxZgpEbGGeJ" : {
+        "timestamp" : 1587426389314,
+        "value" : "28"
+      },
+      "value" : "28"
+    },
+    "ds18b20-x" : {
+      "-M66S3_F5YXV0toWtb52" : {
+        "timestamp" : 1588189219152,
+        "value" : 26.19
+      },
+      "-M66S4GnRKBkAHy02GTo" : {
+        "timestamp" : 1588189222004,
+        "value" : 26.16
+      },
+      "-M66S4zSlibn6tzyiEJh" : {
+        "timestamp" : 1588189224925,
+        "value" : 26.14
+      },
+      "-M66S5lEDFxFjBPzDxVr" : {
+        "timestamp" : 1588189228111,
+        "value" : 26.13
+      },
+      "-M66S6Symvm50-0AHwMF" : {
+        "timestamp" : 1588189230974,
+        "value" : 26.13
+      },
+      "-M66S7Bd8PKmTqr9sBSa" : {
+        "timestamp" : 1588189233961,
+        "value" : 26.13
+      },
+      "-M66S7sp4lPXLWNBIpyS" : {
+        "timestamp" : 1588189236789,
+        "value" : 26.13
+      },
+      "-M66S8_6eV1PgWlatlNA" : {
+        "timestamp" : 1588189239623,
+        "value" : 26.09
+      },
+      "-M66S9HAAyiljvwYeLiE" : {
+        "timestamp" : 1588189242507,
+        "value" : 26.08
+      },
+      "-M66S9yVYq4Dm7glfcag" : {
+        "timestamp" : 1588189245344,
+        "value" : 26.07
+      },
+      "-M66SAepAwuSFabintY3" : {
+        "timestamp" : 1588189248181,
+        "value" : 25.44
+      },
+      "-M66SBM60zBxsOfODl35" : {
+        "timestamp" : 1588189251015,
+        "value" : 23.81
+      },
+      "-M66SC2LRvYhw3Boevg5" : {
+        "timestamp" : 1588189253846,
+        "value" : 21.91
+      },
+      "-M66SClMRXwn0rXEY9Ao" : {
+        "timestamp" : 1588189256791,
+        "value" : 19.98
+      },
+      "-M66SDSaF7RvT6vcM80-" : {
+        "timestamp" : 1588189259622,
+        "value" : 18.3
+      },
+      "-M66SEE1SqIxZE3q5_-u" : {
+        "timestamp" : 1588189262786,
+        "value" : 16.78
+      },
+      "-M66SEvHhoGyfoWz8Hhj" : {
+        "timestamp" : 1588189265619,
+        "value" : 15.51
+      },
+      "-M66SFdIhTKTWdE2Dtft" : {
+        "timestamp" : 1588189268564,
+        "value" : 14.48
+      },
+      "-M66SGLHTFEba_NsCdnY" : {
+        "timestamp" : 1588189271442,
+        "value" : 13.64
+      },
+      "-M66SH1ZY7TXVNf6QyBl" : {
+        "timestamp" : 1588189274276,
+        "value" : 12.95
+      },
+      "-M66SHip9WCNnbQ7dlZ-" : {
+        "timestamp" : 1588189277109,
+        "value" : 12.38
+      },
+      "-M66SIQ7ZvHYahktS_ML" : {
+        "timestamp" : 1588189279944,
+        "value" : 11.88
+      },
+      "-M66SJ7RLW5ny0vX3UXF" : {
+        "timestamp" : 1588189282845,
+        "value" : 11.47
+      },
+      "-M66SJodSrxQKuqxkObP" : {
+        "timestamp" : 1588189285673,
+        "value" : 11.11
+      },
+      "-M66SKVnR5AhooocDYei" : {
+        "timestamp" : 1588189288499,
+        "value" : 10.8
+      },
+      "-M66SLC0zxvtVjAOh_Qr" : {
+        "timestamp" : 1588189291329,
+        "value" : 10.56
+      },
+      "-M66SLtHKqp7204wT3uh" : {
+        "timestamp" : 1588189294162,
+        "value" : 10.34
+      },
+      "-M66SM_SeyfpU9mu4thJ" : {
+        "timestamp" : 1588189296989,
+        "value" : 10.2
+      },
+      "-M66SNGdrMk2OwPIhFd-" : {
+        "timestamp" : 1588189299817,
+        "value" : 10.04
+      },
+      "-M66SNzVTv3kNHEjF79a" : {
+        "timestamp" : 1588189302752,
+        "value" : 9.93
+      },
+      "-M66SOfh-XdDc_b53kni" : {
+        "timestamp" : 1588189305581,
+        "value" : 9.81
+      },
+      "-M66SPN954j4hj0dGmD_" : {
+        "timestamp" : 1588189308426,
+        "value" : 9.72
+      },
+      "-M66SQ3HyKc2nET0XLwY" : {
+        "timestamp" : 1588189311250,
+        "value" : 9.64
+      },
+      "-M66SQkUQoSsm1NEVLwg" : {
+        "timestamp" : 1588189314079,
+        "value" : 9.6
+      },
+      "-M66SRRhm_ip7jKwO8dC" : {
+        "timestamp" : 1588189316909,
+        "value" : 9.55
+      },
+      "-M66SSBMQFm95-fSDV40" : {
+        "timestamp" : 1588189319959,
+        "value" : 9.62
+      },
+      "-M66SSsaNLHQ4YYVzyt6" : {
+        "timestamp" : 1588189322790,
+        "value" : 10.12
+      },
+      "-M66STaQWrfAhv85m8-m" : {
+        "timestamp" : 1588189325723,
+        "value" : 11.84
+      },
+      "-M66SUQqLXi9eY3z-G7h" : {
+        "timestamp" : 1588189329142,
+        "value" : 16.01
+      },
+      "-M66SV8X9F57RqHsU6Bn" : {
+        "timestamp" : 1588189332066,
+        "value" : 21.19
+      },
+      "-M66SVpphQSR-k2TRqzY" : {
+        "timestamp" : 1588189334901,
+        "value" : 25.88
+      },
+      "-M66SWYVe7RW4ty91qtC" : {
+        "timestamp" : 1588189337824,
+        "value" : 29.94
+      },
+      "-M66SXElatqk767NTaXM" : {
+        "timestamp" : 1588189340657,
+        "value" : 33.31
+      },
+      "-M66SXvyVfEQ7w6ZEfjs" : {
+        "timestamp" : 1588189343486,
+        "value" : 36.06
+      },
+      "-M66SYcI4Je-XGHrIk-3" : {
+        "timestamp" : 1588189346324,
+        "value" : 38.31
+      },
+      "-M66SZJdv54sFIKTOfy6" : {
+        "timestamp" : 1588189349161,
+        "value" : 40.16
+      },
+      "-M66S_01xYq_OROZWj7a" : {
+        "timestamp" : 1588189352002,
+        "value" : 41.67
+      },
+      "-M66S_hNQR-cdS6p4xV4" : {
+        "timestamp" : 1588189354840,
+        "value" : 42.9
+      },
+      "-M66SaOf5bkH96mHKNTY" : {
+        "timestamp" : 1588189357676,
+        "value" : 43.92
+      },
+      "-M66Sb4yKhExBzDSWjmH" : {
+        "timestamp" : 1588189360510,
+        "value" : 44.77
+      },
+      "-M66Sc4o29Q59HTaYhmX" : {
+        "timestamp" : 1588189364596,
+        "value" : 45.48
+      },
+      "-M66Scm_UyDnZCfypxD9" : {
+        "timestamp" : 1588189367461,
+        "value" : 46.18
+      },
+      "-M66SdUJGrHyiXU_CBzB" : {
+        "timestamp" : 1588189370324,
+        "value" : 46.74
+      },
+      "-M66SeCNHDY4Xajolbjj" : {
+        "timestamp" : 1588189373272,
+        "value" : 47.22
+      },
+      "-M66SevS60V5Bs5IXcp-" : {
+        "timestamp" : 1588189376221,
+        "value" : 47.61
+      },
+      "-M66SfcMleiDUZkReFo9" : {
+        "timestamp" : 1588189379095,
+        "value" : 47.9
+      },
+      "-M66SgK9R_awsM182Otu" : {
+        "timestamp" : 1588189381962,
+        "value" : 48.17
+      },
+      "-M66Sh0vZlqahLnqVDmr" : {
+        "timestamp" : 1588189384827,
+        "value" : 48.4
+      },
+      "-M66ShinHuZsYRS6VWEe" : {
+        "timestamp" : 1588189387699,
+        "value" : 48.57
+      },
+      "-M66SiYoLiaM7Pb6OxQp" : {
+        "timestamp" : 1588189391092,
+        "value" : 48.76
+      },
+      "-M66SjFb4dNj5U1vGwsd" : {
+        "timestamp" : 1588189393959,
+        "value" : 48.91
+      },
+      "-M66Sk55L98eS-b71n3R" : {
+        "timestamp" : 1588189397383,
+        "value" : 49.02
+      },
+      "-M66SkmoCfs-p_cVtQ1e" : {
+        "timestamp" : 1588189400244,
+        "value" : 49.1
+      },
+      "-M66SlUVaqIxMIh3MtQ1" : {
+        "timestamp" : 1588189403104,
+        "value" : 49.18
+      },
+      "-M66SmB_Fat3YBP8KP0a" : {
+        "timestamp" : 1588189405989,
+        "value" : 49.24
+      },
+      "-M66SmtpCNZA4sh8oQzz" : {
+        "timestamp" : 1588189408885,
+        "value" : 49.28
+      },
+      "-M66SnbfissKewGkL4jU" : {
+        "timestamp" : 1588189411819,
+        "value" : 49.33
+      },
+      "-M66SoJqrww2RKEcZ9d1" : {
+        "timestamp" : 1588189414710,
+        "value" : 49.35
+      },
+      "-M66Sp0SWjGOPbxKxjOt" : {
+        "timestamp" : 1588189417565,
+        "value" : 49.36
+      },
+      "-M66SpiG6E2qDR_v-TrB" : {
+        "timestamp" : 1588189420433,
+        "value" : 49.37
+      },
+      "-M66SqQViYUNqy6aekLe" : {
+        "timestamp" : 1588189423328,
+        "value" : 49.37
+      },
+      "-M66SrHsvOFYnxd6I3oT" : {
+        "timestamp" : 1588189426872,
+        "value" : 49.37
+      },
+      "-M66SrzsIHlPf-YEb4Z1" : {
+        "timestamp" : 1588189429752,
+        "value" : 49.37
+      },
+      "-M66SsgkxdNaAngZ6q3B" : {
+        "timestamp" : 1588189432624,
+        "value" : 49.37
+      },
+      "-M66StOStezcLcGCYAqu" : {
+        "timestamp" : 1588189435485,
+        "value" : 49.34
+      },
+      "-M66Su5DlVB9680O4MqV" : {
+        "timestamp" : 1588189438350,
+        "value" : 49.33
+      },
+      "-M66Sumux0KL7g_7hyFu" : {
+        "timestamp" : 1588189441210,
+        "value" : 49.32
+      },
+      "-M66SvUgz4CurMZtZ5_t" : {
+        "timestamp" : 1588189444076,
+        "value" : 49.32
+      },
+      "-M66SwBRuP0TZOFXB5H6" : {
+        "timestamp" : 1588189446940,
+        "value" : 49.31
+      },
+      "-M66SwtHapK1w4Mfhy_h" : {
+        "timestamp" : 1588189449810,
+        "value" : 49.28
+      },
+      "-M66Sxa3Cy7rX-C0hyQo" : {
+        "timestamp" : 1588189452676,
+        "value" : 49.27
+      },
+      "-M66SyHplrB-T6kaZlac" : {
+        "timestamp" : 1588189455541,
+        "value" : 49.26
+      },
+      "-M66Syzcni364LDBDxFK" : {
+        "timestamp" : 1588189458408,
+        "value" : 49.22
+      },
+      "-M66SzhPI7nin1TqRng6" : {
+        "timestamp" : 1588189461338,
+        "value" : 49.21
+      },
+      "-M66T-Q9rFsRkhW1LeXB" : {
+        "timestamp" : 1588189464266,
+        "value" : 49.17
+      },
+      "-M66T0CQPtJOei80TjgD" : {
+        "timestamp" : 1588189467483,
+        "value" : 49.15
+      },
+      "-M66T0uG3xi778MIiIvQ" : {
+        "timestamp" : 1588189470353,
+        "value" : 49.14
+      },
+      "-M66T1c9BRU624mXoiOT" : {
+        "timestamp" : 1588189473290,
+        "value" : 49.1
+      },
+      "-M66T2K-uagQDloOV4dg" : {
+        "timestamp" : 1588189476160,
+        "value" : 49.05
+      },
+      "-M66T32VB4sX_h1WP_Qc" : {
+        "timestamp" : 1588189479136,
+        "value" : 49.06
+      },
+      "-M66T3kE143QFq3yT43V" : {
+        "timestamp" : 1588189481999,
+        "value" : 49.0
+      },
+      "-M66T4Ss7FUhcjseTDko" : {
+        "timestamp" : 1588189484920,
+        "value" : 49.0
+      },
+      "-M66T59aU-QIr9-CJTE-" : {
+        "timestamp" : 1588189487782,
+        "value" : 48.97
+      },
+      "-M66T5rI5FIn9f8-_JGV" : {
+        "timestamp" : 1588189490643,
+        "value" : 48.92
+      },
+      "-M66T6Z5vB8oeSSGdPDi" : {
+        "timestamp" : 1588189493510,
+        "value" : 48.9
+      },
+      "-M66T7FkYlxsJPBfJxeL" : {
+        "timestamp" : 1588189496368,
+        "value" : 48.86
+      },
+      "-M66T7xT8egfN8NjBE_3" : {
+        "timestamp" : 1588189499230,
+        "value" : 48.83
+      },
+      "-M66T8eDsNL9p5mwuqpb" : {
+        "timestamp" : 1588189502094,
+        "value" : 48.82
+      },
+      "-M66T9WbgCea2rtW4Yu5" : {
+        "timestamp" : 1588189505639,
+        "value" : 48.79
+      },
+      "-M66TAEhHFvtTrabBJDB" : {
+        "timestamp" : 1588189508589,
+        "value" : 48.74
+      },
+      "-M66TBBRz3X87s8MP8Hm" : {
+        "timestamp" : 1588189512477,
+        "value" : 48.68
+      },
+      "-M66TBvC-btGebYd78st" : {
+        "timestamp" : 1588189515469,
+        "value" : 48.65
+      },
+      "-M8M6MdnCwWA2Y9t84A4" : {
+        "timestamp" : 1590599449203,
+        "value" : 25.0
+      },
+      "-M8M6NLzVInoG2xIpnYG" : {
+        "timestamp" : 1590599452095,
+        "value" : 25.0
+      },
+      "-M8M6VxgV2EXXSPhy931" : {
+        "timestamp" : 1590599487340,
+        "value" : 24.94
+      },
+      "-M8M6Wf2W_REmOCpGoMo" : {
+        "timestamp" : 1590599490243,
+        "value" : 24.94
+      },
+      "-M8M6XN4CLCTwXAscptV" : {
+        "timestamp" : 1590599493125,
+        "value" : 24.91
+      },
+      "-M8M6Y4DuwHEcnyl4r4c" : {
+        "timestamp" : 1590599496014,
+        "value" : 24.89
+      },
+      "-M8M6YmaqUD0u06RlMRR" : {
+        "timestamp" : 1590599498919,
+        "value" : 24.88
+      },
+      "-M8M6Za6iIwdlhVAm5QH" : {
+        "timestamp" : 1590599502216,
+        "value" : 24.91
+      },
+      "-M8M6_HqEpD8tLlT49DD" : {
+        "timestamp" : 1590599505079,
+        "value" : 24.92
+      },
+      "-M8M6a60toI45LH3WnJY" : {
+        "timestamp" : 1590599508417,
+        "value" : 24.9
+      },
+      "-M8M6apVVYjjd2ixoGvA" : {
+        "timestamp" : 1590599511392,
+        "value" : 24.89
+      },
+      "-M8M6bY3qE6MmYU93TK6" : {
+        "timestamp" : 1590599514308,
+        "value" : 24.88
+      },
+      "-M8M6cJn5e6UK-7U6SuX" : {
+        "timestamp" : 1590599517491,
+        "value" : 24.91
+      },
+      "-M8M6d173HraQIj_1al2" : {
+        "timestamp" : 1590599520392,
+        "value" : 24.89
+      },
+      "-M8M6dkCXxpcKqxCBFUb" : {
+        "timestamp" : 1590599523341,
+        "value" : 24.88
+      },
+      "-M8M6eU3Py2EA7blDTBQ" : {
+        "timestamp" : 1590599526340,
+        "value" : 24.88
+      },
+      "-M8M6fAhDvVbIi2RnnqL" : {
+        "timestamp" : 1590599529198,
+        "value" : 24.88
+      },
+      "-M8M6fxtwT-NrVgwOfeY" : {
+        "timestamp" : 1590599532409,
+        "value" : 24.88
+      },
+      "-M8M6ggBpK-IbfaQiCtC" : {
+        "timestamp" : 1590599535372,
+        "value" : 24.88
+      },
+      "-M8M6hNdivbhKdy1tCRU" : {
+        "timestamp" : 1590599538217,
+        "value" : 24.88
+      },
+      "-M8M6i50ypymJPztwdsH" : {
+        "timestamp" : 1590599541121,
+        "value" : 24.88
+      },
+      "-M8M6in9EMiL4tYpoVlk" : {
+        "timestamp" : 1590599544010,
+        "value" : 24.88
+      },
+      "-M8M6jVW4sDq0BFko727" : {
+        "timestamp" : 1590599546913,
+        "value" : 24.88
+      },
+      "-M8M6kCXr-W17ZPSXSs0" : {
+        "timestamp" : 1590599549795,
+        "value" : 24.88
+      },
+      "-M8M6kvXAgMosS_7IqgM" : {
+        "timestamp" : 1590599552738,
+        "value" : 24.88
+      },
+      "value" : 24.87501
+    },
+    "ds18b20-y" : {
+      "-M8MZoEN5Ph2smbot8JO" : {
+        "timestamp" : 1590607168472,
+        "value" : 26.06
+      },
+      "-M8MZowTCxBeIovIcnJW" : {
+        "timestamp" : 1590607171358,
+        "value" : 26.09
+      },
+      "-M8MZq-1-NvxwC0PS8AU" : {
+        "timestamp" : 1590607175682,
+        "value" : 26.11
+      },
+      "-M8MZqgQKWYmkt4iG6Ub" : {
+        "timestamp" : 1590607178523,
+        "value" : 26.12
+      },
+      "-M8MZrO_Pf2a_7GxLpcU" : {
+        "timestamp" : 1590607181413,
+        "value" : 26.12
+      },
+      "-M8MZs4zRk-ZGJeVbkm3" : {
+        "timestamp" : 1590607184255,
+        "value" : 26.12
+      },
+      "-M8MZsmdDwvQy2zJsfmV" : {
+        "timestamp" : 1590607187113,
+        "value" : 26.12
+      },
+      "-M8MZtTg_FKvvDpoOVut" : {
+        "timestamp" : 1590607189932,
+        "value" : 26.12
+      },
+      "-M8MZu9ib1tmxMB_bkYV" : {
+        "timestamp" : 1590607192750,
+        "value" : 26.12
+      },
+      "-M8MZuqyXLUsh2eORtcR" : {
+        "timestamp" : 1590607195582,
+        "value" : 26.12
+      },
+      "-M8MZvYPqqrkKkGjkO8h" : {
+        "timestamp" : 1590607198426,
+        "value" : 26.12
+      },
+      "-M8MZwEVgT4l9xKYd6fR" : {
+        "timestamp" : 1590607201248,
+        "value" : 26.12
+      },
+      "-M8MZwvXUtQFzeEdj0ti" : {
+        "timestamp" : 1590607204066,
+        "value" : 26.12
+      },
+      "-M8MZxb_Rdq-465WtCvL" : {
+        "timestamp" : 1590607206885,
+        "value" : 26.12
+      },
+      "-M8MZyJMLxp2ZUzICWXk" : {
+        "timestamp" : 1590607209751,
+        "value" : 26.16
+      },
+      "-M8MZz3vzixgVgvLnPhM" : {
+        "timestamp" : 1590607212860,
+        "value" : 26.17
+      },
+      "-M8MZzljmwPGH0GS1s3Y" : {
+        "timestamp" : 1590607215727,
+        "value" : 26.15
+      },
+      "-M8M_-SmMbkT5R4xP_yg" : {
+        "timestamp" : 1590607218546,
+        "value" : 26.14
+      },
+      "-M8M_08xYZhG-EVVFb9W" : {
+        "timestamp" : 1590607221373,
+        "value" : 26.13
+      },
+      "-M8M_0qTnwk91CY0soq-" : {
+        "timestamp" : 1590607224222,
+        "value" : 26.13
+      },
+      "-M8M_1XdhsBXHOVJ4hlI" : {
+        "timestamp" : 1590607227049,
+        "value" : 26.13
+      },
+      "-M8M_2Ds828QMPfhPn2e" : {
+        "timestamp" : 1590607229880,
+        "value" : 26.13
+      },
+      "-M8M_2uy_JknBoIpIG_l" : {
+        "timestamp" : 1590607232702,
+        "value" : 26.16
+      },
+      "-M8M_3bDuIkGdPtsKvBC" : {
+        "timestamp" : 1590607235534,
+        "value" : 26.14
+      },
+      "-M8M_4In_jEDK64nRP1n" : {
+        "timestamp" : 1590607238387,
+        "value" : 26.13
+      },
+      "-M8M_5-fUzFltqLbb_3W" : {
+        "timestamp" : 1590607241259,
+        "value" : 26.13
+      },
+      "-M8M_60Mkq-7QXTtapsG" : {
+        "timestamp" : 1590607245399,
+        "value" : 26.13
+      },
+      "-M8M_6hNQilTqTEnzPaU" : {
+        "timestamp" : 1590607248216,
+        "value" : 26.13
+      },
+      "-M8M_7OTMJIIJNDaRoq7" : {
+        "timestamp" : 1590607251038,
+        "value" : 26.13
+      },
+      "-M8M_84kUD_Huavw8o2S" : {
+        "timestamp" : 1590607253872,
+        "value" : 26.13
+      },
+      "-M8M_8lpXWzsCJoMboVC" : {
+        "timestamp" : 1590607256693,
+        "value" : 26.13
+      },
+      "-M8M_9SpDyDjaNhHJRqJ" : {
+        "timestamp" : 1590607259509,
+        "value" : 26.16
+      },
+      "-M8M_A9RYfEumxRTMpmN" : {
+        "timestamp" : 1590607262364,
+        "value" : 26.14
+      },
+      "value" : 26.14066
+    }
+  }
+}
